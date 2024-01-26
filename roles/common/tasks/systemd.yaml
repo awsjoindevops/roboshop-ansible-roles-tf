@@ -1,0 +1,22 @@
+# - name: "copy {{component}} repo"
+#   ansible.builtin.copy:
+#     src: "{{component}}.service"
+#     dest: "/etc/systemd/system/{{component}}.service"
+
+
+- name: "copy {{component}} repo"
+  ansible.builtin.template:
+    src: "{{component}}.service.j2"
+    dest: "/etc/systemd/system/{{component}}.service"
+
+- name: demon reload and start
+  ansible.builtin.systemd_service:
+    daemon_reload: true
+    #state: started
+
+- name: "start and enable catalog {{component}}"
+  ansible.builtin.service:
+    name: "{{component}}"
+    state: restarted
+    enabled: yes
+

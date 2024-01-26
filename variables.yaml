@@ -1,0 +1,10 @@
+MONGODB_HOST: mongodb.awsjoindevops.online
+REDIS_HOST: redis.awsjoindevops.online
+CATALOGUE_HOST: catalogue.awsjoindevops.online
+USER_HOST: user.awsjoindevops.online
+SHIPPING_HOST: shipping.awsjoindevops.online
+CART_HOST: cart.awsjoindevops.online
+PAYMENT_HOST: payment.awsjoindevops.online
+MYSQL_HOST: mysql.awsjoindevops.online
+RABBITMQ_HOST: rabbitmq.awsjoindevops.online
+DISPATCH_HOST: dispatch.awsjoindevops.online
