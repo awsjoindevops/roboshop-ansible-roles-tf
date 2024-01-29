@@ -26,13 +26,13 @@
     url: "https://roboshop-builds.s3.amazonaws.com/{{component}}.zip"
     dest: /tmp
   
-  - name: "unzip {{component}} the file"
-    tags:
+- name: "unzip {{component}} the file"
+  tags:
   - deployment
-    ansible.builtin.unarchive:
-    src: "/tmp/{{component}}.zip"
-    dest: /app
-    remote_src: yes
+  ansible.builtin.unarchive:
+  src: "/tmp/{{component}}.zip"
+  dest: /app
+  remote_src: yes
 
 - name: Install dependencies
   tags:
