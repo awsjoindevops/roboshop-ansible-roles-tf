@@ -8,3 +8,5 @@ PAYMENT_HOST: payment-prod.awsjoindevops.online
 MYSQL_HOST: mysql-prod.awsjoindevops.online
 RABBITMQ_HOST: rabbitmq-prod.awsjoindevops.online
 DISPATCH_HOST: dispatch-prod.awsjoindevops.online
+NEXUS_URL: http://172.31.7.170:8081/repository
+group_id: "com/roboshop"
